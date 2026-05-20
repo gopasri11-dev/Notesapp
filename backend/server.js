@@ -12,10 +12,14 @@ const connectDB =require("./config/db.js");
 const app = express();
 console.log("JWT SECRET:", process.env.JWT_SECRET);
 
+<<<<<<< HEAD
 app.use(cors({
   origin: "https://notesapp-two-delta.vercel.app/",
   methods: ["GET", "POST", "PUT", "DELETE"]
 }));
+=======
+app.use(cors({ origin: "https://notesapp-two-delta.vercel.app/"}));
+>>>>>>> 346eeae50cc8041d2140cd6d003d60174abc5915
 
 app.use(express.json());
 app.use("/api/auth", authRoutes);
