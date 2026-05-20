@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+  baseURL: "https://notesapp-1bb8.onrender.com/api",
 });
 
 // 🔥 Auto attach token to every request
