@@ -14,7 +14,7 @@ console.log("JWT SECRET:", process.env.JWT_SECRET);
 
 
 app.use(cors({
-origin: "https://notesapp-two-delta.vercel.app/",
+origin: "https://notesapp-two-delta.vercel.app",
 methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 credentials: true,
 allowedHeaders: ["Content-Type", "Authorization"]
