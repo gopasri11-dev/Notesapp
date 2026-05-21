@@ -12,9 +12,7 @@ function Home() {
   const [editingId, setEditingId] = useState(null);
 
 
-  // =========================
   // FETCH NOTES
-  // =========================
   const fetchNotes = async () => {
     try {
 
@@ -34,9 +32,7 @@ function Home() {
   }, []);
 
 
-  // =========================
   // ADD NOTE
-  // =========================
   const addNote = async () => {
 
     if (!content.trim()) {
@@ -62,9 +58,9 @@ function Home() {
   };
 
 
-  // =========================
+
   // DELETE NOTE
-  // =========================
+
   const deleteNote = async (id) => {
 
     try {
@@ -79,10 +75,7 @@ function Home() {
     }
   };
 
-
-  // =========================
   // START EDIT
-  // =========================
   const startEdit = (note) => {
     setEditingId(note._id);
     setTitle(note.title);
@@ -90,9 +83,7 @@ function Home() {
   };
 
 
-  // =========================
   // UPDATE NOTE
-  // =========================
   const updateNote = async () => {
 
     if (!content.trim()) {
